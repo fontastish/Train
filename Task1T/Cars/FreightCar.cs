@@ -11,8 +11,8 @@ namespace Task1T
         private double _loadCapacity;
 
 
-        public FreightCar(double length, double width, 
-            double height, double weight, string color, double loadCapacity) : 
+        public FreightCar(double length, double width, double height,
+            double weight, string color, double loadCapacity) : 
             base(length, width, height, weight, color)
         {
             _loadCapacity = loadCapacity;

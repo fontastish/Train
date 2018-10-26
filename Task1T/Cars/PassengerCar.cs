@@ -8,16 +8,16 @@ namespace Task1T
 {
     class PassengerCar : Car
     {
-        private int _numberofPlaces;
+        private int _numberOfPlaces;
         private string _type;
         private double _comfort;
         private double _loadCapacity;
 
-        public PassengerCar(double length, double width, double height, double weight, 
-            string color, int numberofPlaces, string type, double comfort, double loadCapacity) : 
+        public PassengerCar(double length, double width, double height, double weight, string color,
+            int numberOfPlaces, string type, double comfort, double loadCapacity) : 
             base(length, width, height, weight, color)
         {
-            _numberofPlaces = numberofPlaces;
+            _numberOfPlaces = numberOfPlaces;
             _type = type;
             _comfort = comfort;
             _loadCapacity = loadCapacity;

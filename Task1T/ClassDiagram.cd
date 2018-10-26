@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Task1T.Car" Collapsed="true">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABACIAAAAAAAAAEBAADAAAAAABAAAgAAAAAA=</HashCode>
+      <FileName>Cars\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Task1T.CreateTrain">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreateTrain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Task1T.FreightCar">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cars\FreightCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Task1T.Locomotive">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAEAAAAAACAAEAAAAAAAAAAAACAAABQAAAEA=</HashCode>
+      <FileName>Cars\Locomotive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Task1T.PassengerCar">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAQAAAAAAAAAAAAAAgCAAAAAAAAAAAA=</HashCode>
+      <FileName>Cars\PassengerCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Task1T.Program" Collapsed="true">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

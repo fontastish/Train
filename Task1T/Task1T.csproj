@@ -42,15 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
-    <Compile Include="FreightCar.cs" />
-    <Compile Include="Locomotive.cs" />
-    <Compile Include="PassengerCar.cs" />
+    <Compile Include="Cars\Car.cs" />
+    <Compile Include="Cars\FreightCar.cs" />
+    <Compile Include="CreateTrain.cs" />
+    <Compile Include="Konductor.cs" />
+    <Compile Include="Cars\Locomotive.cs" />
+    <Compile Include="Cars\PassengerCar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
