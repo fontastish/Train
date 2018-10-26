@@ -19,7 +19,9 @@ namespace Task1T
         public double Consumption { get => _consumption; set => _consumption = value; }
         public double Traction { get => _traction; set => _traction = value; }
 
-        public Locomotive(string typeEngine, double maxSpeed, double consumption, double traction)
+        public Locomotive(double length, double width, double height, double weight,
+            string color, string typeEngine, double maxSpeed, double consumption, double traction) :
+            base(length, width, height, weight, color)
         {
             _typeEngine = typeEngine;
             _maxSpeed = maxSpeed;

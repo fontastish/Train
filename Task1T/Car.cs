@@ -19,5 +19,16 @@ namespace Task1T
         public double Height { get => _height; set => _height = value; }
         public double Weight { get => _weight; set => _weight = value; }
         public string Color { get => _color; set => _color = value; }
+
+        public Car(double length, double width, double height, double weight, string color)
+        {
+            _length = length;
+            _width = width;
+            _height = height;
+            _weight = weight;
+            _color = color;
+        }
     }
+
+
 }
