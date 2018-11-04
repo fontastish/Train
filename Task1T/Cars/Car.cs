@@ -8,25 +8,24 @@ namespace Task1T
 {
     class Car
     {
-        private double _length;
-        private double _width;
-        private double _height;
-        private double _weight;
-        private string _color;
-
-        public double Length { get => _length; set => _length = value; }
-        public double Width { get => _width; set => _width = value; }
-        public double Height { get => _height; set => _height = value; }
-        public double Weight { get => _weight; set => _weight = value; }
-        public string Color { get => _color; set => _color = value; }
+        public double Length { get; set; }
+        public double Width { get; set; }
+        public double Height { get; set; }
+        public double Weight { get; set; }
+        public string Color { get; set; }
 
         public Car(double length, double width, double height, double weight, string color)
         {
-            _length = length;
-            _width = width;
-            _height = height;
-            _weight = weight;
-            _color = color;
+            Length = length;
+            Width = width;
+            Height = height;
+            Weight = weight;
+            Color = color;
+        }
+
+        public virtual double TotalWeight()    // метод для высчитывания общей массы вагона, нужен в наследуемых классах
+        {
+            return Weight;
         }
     }
 

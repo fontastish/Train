@@ -8,14 +8,19 @@ namespace Task1T
 {
     class FreightCar: Car
     {
-        private double _loadCapacity;
+        public double LoadCapacity { get; set; }
 
 
         public FreightCar(double length, double width, double height,
             double weight, string color, double loadCapacity) : 
             base(length, width, height, weight, color)
         {
-            _loadCapacity = loadCapacity;
+            LoadCapacity = loadCapacity;
+        }
+
+        public override double TotalWeight()
+        {
+            return Weight + LoadCapacity;
         }
     }
 }

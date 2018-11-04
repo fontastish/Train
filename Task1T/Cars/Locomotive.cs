@@ -11,8 +11,8 @@ namespace Task1T
     {
         private string _typeEngine;
         private double _maxSpeed;
-        private double _consumption;
-        private double _traction;
+        private double _consumption; //потребление
+        private double _traction;   //тяга
 
         public string TypeEngine { get => _typeEngine; set => _typeEngine = value; }
         public double MaxSpeed { get => _maxSpeed; set => _maxSpeed = value; }
@@ -27,6 +27,11 @@ namespace Task1T
             _maxSpeed = maxSpeed;
             _consumption = consumption;
             _traction = traction;
+        }
+
+        public override double TotalWeight()
+        {
+            return Weight;
         }
     }
 }
