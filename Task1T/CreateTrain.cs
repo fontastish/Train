@@ -64,6 +64,21 @@ namespace Task1T
 
         }
 
+        public List<PassengerCar> FindAllCarsByPlaces(int start, int over)     // поиск по кол-во пассажиров в заданом промежутке
+        {
+            List<PassengerCar> FoundCars = new List<PassengerCar>();                                //создаем список в котором будет все вагоны
+                                                                                                    //удовлетворяющие параметру
+            foreach (var i in Train.FindAll(x => x is PassengerCar))
+            {
+                if (((PassengerCar) i).NumberOfPlaces > start && ((PassengerCar) i).NumberOfPlaces < over)
+                {
+                    FoundCars.Add((PassengerCar)i);
+                }
+            }
+
+            return FoundCars;
+        }
+
         public bool SortComfort()
         {
             var temp = Train.FindAll(x => x is PassengerCar);

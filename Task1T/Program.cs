@@ -17,8 +17,9 @@ namespace Task1T
             {
                 train.Add(passenger);
             }
-
-            Console.WriteLine(train.TotalPlacesTrain());
+            PassengerCar passenger1 = new PassengerCar(10, 10, 10, 100, "black", 90, "kype", 5, 100);
+            train.Add(passenger1);
+            train.FindAllCarsByPlaces(50, 100);
             Console.ReadKey();
         }
     }
