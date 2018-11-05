@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1T
 {
-    class PassengerCar : Car
+    public class PassengerCar : Car
     {
         public int NumberOfPlaces { get; set; }
         public string Type { get; set; }
@@ -28,5 +28,9 @@ namespace Task1T
             return Weight + LoadCapacity + (NumberOfPlaces * 70);
         }
 
+        public static int CompareByComfort(PassengerCar car1,PassengerCar car2)
+        {
+            return car1.Comfort.CompareTo(car2.Comfort);
+        }
     }
 }

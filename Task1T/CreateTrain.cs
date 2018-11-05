@@ -51,6 +51,26 @@ namespace Task1T
 
             return trainWeight;
         }
+
+        public double TotalLoadCapacityTrain()                  // считаем багаж
+        {
+            double totalLoadCapacity = 0;
+            foreach (var i in Train.FindAll(x => x is PassengerCar))
+            {
+                totalLoadCapacity += ((PassengerCar)i).NumberOfPlaces;
+            }
+
+            return totalLoadCapacity;
+
+        }
+
+        public bool SortComfort()
+        {
+            var temp = Train.FindAll(x => x is PassengerCar);
+            temp.Sort(PassengerCar.CompareByComfort);
+
+            return false;
+        }
     }
 }
 

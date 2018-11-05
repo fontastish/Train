@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Task1T
 {
-    class Locomotive : Car
+    public class Locomotive : Car
     {
         private string _typeEngine;
         private double _maxSpeed;

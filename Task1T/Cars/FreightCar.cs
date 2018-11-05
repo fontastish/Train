@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1T
 {
-    class FreightCar: Car
+    public class FreightCar: Car
     {
         public double LoadCapacity { get; set; }
 
