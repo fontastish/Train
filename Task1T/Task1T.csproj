@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Cars\Car.cs" />
     <Compile Include="Cars\FreightCar.cs" />
-    <Compile Include="CreateTrain.cs" />
+    <Compile Include="TrainBuilder.cs" />
     <Compile Include="Konductor.cs" />
     <Compile Include="Cars\Locomotive.cs" />
     <Compile Include="Cars\PassengerCar.cs" />

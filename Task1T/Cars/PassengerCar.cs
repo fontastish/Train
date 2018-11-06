@@ -28,9 +28,5 @@ namespace Task1T
             return Weight + LoadCapacity + (NumberOfPlaces * 70);
         }
 
-        public static int CompareByComfort(PassengerCar car1,PassengerCar car2)
-        {
-            return car1.Comfort.CompareTo(car2.Comfort);
-        }
     }
 }

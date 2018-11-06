@@ -28,11 +28,6 @@ namespace Task1T
             return Weight;
         }
 
-        public static int CompareByComfort1(Car car1, Car car2)
-        {
-            return car1.Weight.CompareTo(car2.Weight);
-        }
-
 }
 
 }

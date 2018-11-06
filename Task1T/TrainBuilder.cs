@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Task1T
 {
-    class CreateTrain
+    class TrainBuilder
     {
         private List<Car> Train;
 
-        public CreateTrain(Car car)
+        public TrainBuilder(Car car)
         {
             Train = new List<Car>() {car};
         }
@@ -79,12 +79,16 @@ namespace Task1T
             return FoundCars;
         }
 
-        public bool SortComfort()
+        public void SortComfort()
         {
-            var temp = Train.FindAll(x => x is PassengerCar);
-            temp.Sort(PassengerCar.CompareByComfort);
+            var temp = Train.FindAll(x => x is PassengerCar).Cast<PassengerCar>();    //поиск всех пассажирских вагон
+            temp = temp.OrderBy(e => e.Comfort);   //сортировка
 
-            return false;
+            foreach (var x in temp)             //удаление всех пассажирских вагонов чтобы потом добавить отсортированный список
+            {
+                Train.Remove(x);
+            }
+            Train.AddRange(temp);
         }
     }
 }
