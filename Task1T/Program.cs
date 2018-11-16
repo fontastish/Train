@@ -10,13 +10,10 @@ namespace Task1T
     {
         static void Main(string[] args)
         {
+            GitCheck.Print();
             Locomotive loc = new Locomotive(10,10,10,200,"black","gas",100,10,50000);
             PassengerCar passenger = new PassengerCar(10,10,10,100,"black",40,"kype",5,100);
             TrainBuilder trainBuilder = new TrainBuilder(loc);
-            for (int i = 0; i < 3; i++)
-            {
-                trainBuilder.Add(passenger);
-            }
             PassengerCar passenger1 = new PassengerCar(10, 10, 10, 100, "black", 90, "kype", 0, 100);
             PassengerCar passenger2 = new PassengerCar(10, 10, 10, 100, "black", 90, "kype", 1, 100);
             PassengerCar passenger3 = new PassengerCar(10, 10, 10, 100, "black", 90, "kype", 4, 100);
